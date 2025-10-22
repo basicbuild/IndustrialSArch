@@ -1,0 +1,12 @@
+﻿#ifndef SUBUIFRAME_GLOBAL_H
+#define SUBUIFRAME_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SUBUIFRAME_LIBRARY)
+#define SUBUIFRAME_EXPORT Q_DECL_EXPORT
+#else
+#define SUBUIFRAME_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SUBUIFRAME_GLOBAL_H
